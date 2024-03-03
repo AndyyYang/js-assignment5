@@ -15,7 +15,6 @@ Would result in:
 	'https://www.fvtc.edu'
 ]
 
-
 TO TEST:
 You can run this example by running `node problems/example` in your terminal,
 or you can run all by running `node run-all`.
@@ -37,3 +36,4 @@ const secureUrls = websiteLinks // append your array methods here
 
 
 test("Example", secureUrls)
+

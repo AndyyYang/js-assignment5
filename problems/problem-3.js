@@ -25,10 +25,14 @@ or you can run all by running `node run-all`.
 
 const { test } = require('../tester')
 
-const isEven = number => number % 2 === 0 // returns true if the number is even
-
 const numbers = [ -10, -5, 0, 5, 10, 8, -2 ]
 
-const numberStrings = numbers // append your array methods here
+const numberStrings = numbers
+.filter(number => number > 0)
+.map(number => `${number} is ${number % 2 === 0 ? 'even' : 'odd'}`)
+.sort((a, b) => {
+	const toFirst = parseInt(a, b)
+	const toLast = parseInt(b)
+	return toFirst - toLast})
 
 test("Problem 3", numberStrings)

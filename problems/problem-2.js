@@ -49,6 +49,11 @@ const strings = [
 	'"firstName":"Mace","lastName":"Windu","age":53,"occupation":"Jedi","homePlanet":"Haruun Kal"'
 ]
 
-const jedi = strings // append your code here
+const mySelectedJedis = [1, 3, 4]
+
+const jedi = mySelectedJedis.map(index => { 
+	const jediKnights = strings[index]
+	return JSON.parse(`{${jediKnights}}`)
+})
 
 test("Problem 2", jedi)
